@@ -29,7 +29,7 @@ function Navbar({}: Props) {
         <div className='flex justify-center items-center gap-4 p-2'>
         <TooltipProvider delayDuration={300}>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={() => redirect("/")}>
                 {/* Home */} <House size={iconSize} />
               </Button>
@@ -39,7 +39,7 @@ function Navbar({}: Props) {
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={() => redirect("/projects")}>
                 {/* Projects */} <Folder size={iconSize} />
               </Button>
@@ -49,7 +49,7 @@ function Navbar({}: Props) {
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={()=>redirect("/experiences")}>
                 {/* Experience */} <Briefcase  size={iconSize} />
               </Button>
@@ -59,7 +59,7 @@ function Navbar({}: Props) {
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={()=>redirect("/education")}>
                 {/* Education */} <GraduationCap size={iconSize} />
               </Button>
@@ -69,7 +69,7 @@ function Navbar({}: Props) {
             </TooltipContent>
           </Tooltip>
           <Tooltip>
-            <TooltipTrigger>
+            <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={()=>redirect("/contact")}>
                 {/* Contact */} <Mail size={iconSize} />
               </Button>
