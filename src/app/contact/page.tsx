@@ -1,8 +1,12 @@
+import {Mail} from 'lucide-react'
+import Section from '@/components/section'
+
 function Contact(){
     return (
-        <div>
-            <h1>Contact</h1>
-        </div>
+        <Section title="Contact" icon={<Mail />}>
+            <div>
+            </div>
+        </Section>
     )
 }
 export default Contact;

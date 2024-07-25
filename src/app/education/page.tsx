@@ -1,8 +1,12 @@
+import { GraduationCap } from "lucide-react";
+import Section from "@/components/section";
+
 function Education(){
     return(
-        <div>
-            Education
-        </div>
+        <Section title="Education" icon={<GraduationCap />}>
+            <div>
+            </div>
+        </Section>
     )
 }
 

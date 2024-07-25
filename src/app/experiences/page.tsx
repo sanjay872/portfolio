@@ -1,8 +1,12 @@
+import Section from "@/components/section";
+import { Briefcase } from "lucide-react";
+
 function Experiences(){
     return (
-        <div>
-            Experiences
-        </div>
+        <Section title="Experiences" icon={<Briefcase></Briefcase>}>
+            <div>
+            </div>
+        </Section>
     )
 }
 
