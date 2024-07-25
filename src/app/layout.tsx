@@ -23,10 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head />
+      <head >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
@@ -37,7 +39,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NavbarContainer />
-            <div className="flex min-h-screen flex-col justify-between items-center p-10">
+            <div className="flex flex-col justify-start items-start p-10">
               {children}
             </div>
           </ThemeProvider>

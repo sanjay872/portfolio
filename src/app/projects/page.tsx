@@ -4,7 +4,7 @@ import { Folder } from "lucide-react";
 
 function Projects(){
    return(
-    <div>
+    <div className="w-full">
     <Section title="Projects" icon={<Folder></Folder>} >
       <ProjectCard image="/angularIcon.png" title="Angular basic project"  description="app to download image from cloud" href="https://test.com" tags={["Angular","Supabase"]}/>
       <ProjectCard image="/reactIcon.png" title="React advanced project" description="app to manage tasks" href="https://example.com" tags={["React", "Firebase"]} />
