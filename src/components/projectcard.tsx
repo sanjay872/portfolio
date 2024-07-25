@@ -6,30 +6,36 @@ import { useRouter } from 'next/navigation';
 
 type Props = {
     //children:React.ReactNode;
-    image:string;
+    image?:string;
     title:string;
+    startDate:string;
+    endDate:string;
     description:string;
     tags:string[];
     href:string;
 }
 
-export default function ProjectCard({title,description,image,tags,href}: Props) {
+export default function ProjectCard({title,description,image,tags,href,startDate,endDate}: Props) {
     const router = useRouter();
     function redirect(){
         router.push(href);
     }
     return (
-    <div className='w-96 flex flex-col border-b-2 bg-primary text-primary-foreground rounded-lg p-5 drop-shadow-lg'>
+    <div className='w-96 flex flex-col border-b-2 bg-primary text-primary-foreground rounded-lg p-5'>
         <div>
-            <div className='m-0 pt-2 pb-2 flex items-center justify-center'>
-                <Image src={image} alt={title} width={200} height={200} />
+            <div className='flex items-center justify-end'>
+                <div className='text-xs'>{startDate} - {endDate}</div>
             </div>
+            {
+                image && <div className='m-0 pt-2 pb-2 flex items-center justify-center'>
+                <Image src={image} alt={title} width={200} height={200} /></div>
+            }
             <div className=' flex h-full w-full flex-col gap-4 items-start justify-start'>
                 <div className='flex-row items-center'>
                     <div className='font-semibold text-lg'>{title}</div>
                     <span>{description}</span>
                 </div>
-                <div>
+                <div className='flex gap-2 flex-wrap'>
                     {tags.map(tag => (
                         <span className='bg-primary-foreground text-sm text-primary p-2 mr-1 rounded-full' key={tag}>{tag}</span>
                     ))}
