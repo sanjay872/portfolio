@@ -24,10 +24,10 @@ function Navbar({}: Props) {
   }
 
   return (
-    <div className='w-full rounded-xl h-full max-w-xl bg-primary gap-4 flex justify-around items-center'>
+    <div className='w-full rounded-xl h-full max-w-xl bg-primary gap-4 flex justify-around items-center border-solid border-2'>
         <div className='w-1/12'></div>
         <div className='flex justify-center items-center gap-4 p-2'>
-        <TooltipProvider delayDuration={300}>
+        <TooltipProvider delayDuration={100}>
           <Tooltip>
             <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={() => redirect("/")}>
@@ -68,21 +68,21 @@ function Navbar({}: Props) {
               <p>Education</p>
             </TooltipContent>
           </Tooltip>
-          <Tooltip>
+          {/* <Tooltip>
             <TooltipTrigger asChild>
               <Button className='text-primary-foreground' variant="ghost" onClick={()=>redirect("/contact")}>
-                {/* Contact */} <Mail size={iconSize} />
+                <Mail size={iconSize} />
               </Button>
             </TooltipTrigger>
             <TooltipContent>
               <p>Contact</p>
             </TooltipContent>
-          </Tooltip>
+          </Tooltip> */}
         </TooltipProvider>
         </div>
         {/* Toogle Theme */}
         <div className='flex p-2 justify-center items-center gap-2'>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
            {/* Hire Me */}
            {/* <Button className='flex justify-center items-center gap-2' variant='secondary'>
             <DiamondPlus size={iconSize} />
