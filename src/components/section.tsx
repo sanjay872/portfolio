@@ -13,7 +13,7 @@ export default function Section({title,icon,children}: Props) {
             {icon}
             <h2>{title}</h2>
         </span>
-        <div className='w-full h-full flex flex-row justify-center items-start gap-4 flex-wrap p-5'>
+        <div>
             {children}
         </div>
     </div>

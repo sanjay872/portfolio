@@ -89,10 +89,12 @@ function Projects(){
   ]
    return(
     <div className="w-full">
-    <Section title="Projects" icon={<Folder></Folder>} >
+    <Section title="Projects" icon={<Folder></Folder>}>
+      <div className='w-full h-full flex flex-row justify-center items-start gap-4 flex-wrap p-5'>
     {projects.map((project, index) => (
           <ProjectCard key={index} title={project.title} description={project.description} image={project.image} href={project.href} tags={project.tags} startDate={project.startDate} endDate={project.startDate}></ProjectCard>
         ))}     
+      </div>
     </Section>
   </div>
    )
