@@ -6,14 +6,14 @@ const educationData = [
   {
     degree: "Master’s in Computer Science,",
     institution: "Illinois Institute of Technology, Chicago, IL",
-    year: "January 2024 - December 2025",
+    year: "Jan 2024 - Dec 2025",
     details:
       "Advance Database Organization, UI/UX design, Mobile App Development, Machine Learning",
   },
   {
     degree: "Bachelor of Engineering in Computer Science and Engineering,",
     institution: "St.Joseph’s Institute of Technology, Chennai, Tamil Nadu, India",
-    year: "2017 - 2021",
+    year: "Aug 2017 - Apr 2021",
     details:
       "Data structures and Algorithms, Operating Systems, Object Oriented Programming.",
   },
@@ -21,7 +21,7 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section className="min-h-screen bg-gray-100 py-16 px-6 mt-10">
+    <section className="bg-gray-100 py-16 px-6 mt-10">
       <div className="container mx-auto">
         {/* Heading */}
         <motion.h1

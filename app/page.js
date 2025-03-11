@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import About from "./components/About";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,14 +106,14 @@ export default function Page() {
       {[
         { id: "about", bg: "bg-gray-100", content: <About /> },
         { id: "education", bg: "bg-gray-200", content: <Education /> },
-        { id: "experience", bg: "bg-gray-300", content: <h1>Experience Section</h1> },
+        { id: "experience", bg: "bg-gray-300", content: <Experience /> },
         { id: "projects", bg: "bg-gray-400", content: <h1>Projects Section</h1> },
         { id: "achievements", bg: "bg-gray-500", content: <h1>Achievements Section</h1> },
       ].map(({ id, bg, content }, index) => (
         <motion.section
           key={id}
           id={id}
-          className={`h-screen flex items-center justify-center ${bg}`}
+          className={`flex items-center justify-center ${bg}`}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
