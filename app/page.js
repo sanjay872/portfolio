@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import About from "./components/About";
+import Education from "./components/Education";
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false);
@@ -103,7 +104,7 @@ export default function Page() {
       {/* Sections with Animations */}
       {[
         { id: "about", bg: "bg-gray-100", content: <About /> },
-        { id: "education", bg: "bg-gray-200", content: <h1>Education Section</h1> },
+        { id: "education", bg: "bg-gray-200", content: <Education /> },
         { id: "experience", bg: "bg-gray-300", content: <h1>Experience Section</h1> },
         { id: "projects", bg: "bg-gray-400", content: <h1>Projects Section</h1> },
         { id: "achievements", bg: "bg-gray-500", content: <h1>Achievements Section</h1> },
