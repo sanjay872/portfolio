@@ -6,6 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import About from "./components/About";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Projects from "./components/Project";
+import Skills from "./components/Skills";
+import Achievements from "./components/Achievements";
 
 export default function Page() {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +53,7 @@ export default function Page() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            {["about", "education", "experience", "projects", "achievements"].map((item) => (
+            {["about", "education", "skills", "experience",  "projects", "achievements"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
@@ -88,7 +91,7 @@ export default function Page() {
                 <X size={30} />
               </button> */}
 
-              {["about", "education", "experience", "projects", "achievements"].map((item) => (
+              {["about", "education", "skills","experience", "projects", "achievements"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
@@ -106,9 +109,10 @@ export default function Page() {
       {[
         { id: "about", bg: "bg-gray-100", content: <About /> },
         { id: "education", bg: "bg-gray-200", content: <Education /> },
+        { id: "skills", bg: "bg-gray-200", content: <Skills /> },
         { id: "experience", bg: "bg-gray-300", content: <Experience /> },
-        { id: "projects", bg: "bg-gray-400", content: <h1>Projects Section</h1> },
-        { id: "achievements", bg: "bg-gray-500", content: <h1>Achievements Section</h1> },
+        { id: "projects", bg: "bg-gray-400", content: <Projects /> },
+        { id: "achievements", bg: "bg-gray-500", content: <Achievements /> },
       ].map(({ id, bg, content }, index) => (
         <motion.section
           key={id}
@@ -125,7 +129,7 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center p-4">
-        <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
       </footer>
     </>
   );
