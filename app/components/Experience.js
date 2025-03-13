@@ -9,7 +9,7 @@ const experienceData = [
     company: "Illinois Institute of Technology",
     year: "Feb 2025 - Present",
     description:
-      "Collaborate with two Teaching Assistants to guide 80 students in user-centered design principles, improving practical application skills and contributing to a 90%+ overall class score in assignments.",
+      "Collaborating with two Teaching Assistants to guide 80 students in user-centered design principles, improving practical application skills and contributing to a 90%+ overall class score in assignments.",
     icon: <GraduationCap size={24} className="text-white" />,
   },
   {

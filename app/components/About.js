@@ -3,6 +3,17 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const about={
+    name:"Sanjay Sakthivel",
+    resumeLink:"https://drive.google.com/file/d/1qzM_aOmCWvIzyvH5mr4DZCLa9vdJhSll/view?usp=sharing",
+    profileDescription:`I'm a passionate software engineer with expertise in full-stack development, specializing in Java, Python, Angular, React, 
+                    Spring Boot, Node.js, and SQL. I thrive on solving complex problems and optimizing performance, successfully reducing app 
+                    response times by 20-30% and automating workflows to process 1,000+ records, eliminating manual overhead.  
+                    I enjoy collaborating on projects, from developing AI-driven applications to building scalable inventory management systems.`,
+    gitlink:"https://github.com/sanjay872",
+    linkedin:"https://linkedin.com/in/sanjaysakthivel"
+}
+
 export default function About() {
     return (
         <section className="relative flex flex-row items-center text-center justify-center w-full p-10 min-h-screen bg-gradient-to-r from-blue-50 to-indigo-100 overflow-hidden">
@@ -30,14 +41,14 @@ export default function About() {
                     />
                 </motion.div>
                 
-                {/* <motion.h1 
+                <motion.h1 
                     className="text-4xl font-bold text-gray-800"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
                 >
-                    About Me
-                </motion.h1> */}
+                {about.name}
+                </motion.h1>
                 
                 <div>
 
@@ -47,10 +58,7 @@ export default function About() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                 >
-                    I'm a passionate software engineer with expertise in full-stack development, specializing in Java, Python, Angular, React, 
-                    Spring Boot, Node.js, and SQL. I thrive on solving complex problems and optimizing performance, successfully reducing app 
-                    response times by 20-30% and automating workflows to process 1,000+ records, eliminating manual overhead.  
-                    I enjoy collaborating on projects, from developing AI-driven applications to building scalable inventory management systems.
+                    {about.profileDescription}
                 </motion.p>
                 
                 {/* <motion.div 
@@ -77,32 +85,31 @@ export default function About() {
                     transition={{ delay: 0.5, duration: 0.6 }}
                 >
                     <a 
-                        href="https://github.com/sanjay872" 
+                        href={about.gitlink} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-gray-600 hover:text-gray-900 text-lg font-medium transition duration-200"
+                        className="text-blue-600 hover:text-gray-900 text-lg font-medium transition duration-200"
                         aria-label="GitHub Profile"
                     >
                         GitHub
                     </a>
                     
                     <a 
-                        href="https://linkedin.com/in/sanjaysakthivel" 
+                        href={about.linkedin}
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-gray-600 hover:text-gray-900 text-lg font-medium transition duration-200"
+                        className="text-blue-600 hover:text-gray-900 text-lg font-medium transition duration-200"
                         aria-label="LinkedIn Profile"
                     >
                         LinkedIn
                     </a>
-
-                    <a 
-                        href="/resume.pdf" 
-                        download 
-                        className="text-blue-600 hover:underline text-lg font-medium transition duration-200"
-                        aria-label="Download Resume"
+                    <a
+                        href={about.resumeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-gray-900 text-lg font-medium transition duration-200"
                     >
-                        Download Resume
+                    Download Resume
                     </a>
                 </motion.div>
 

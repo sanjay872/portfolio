@@ -1,30 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Server, Cloud, PenTool } from "lucide-react";
+import { Code, Server, Cloud, PenTool, SquareDashedBottomCode, Database } from "lucide-react";
 
 
 const skills = [
     {
+      category: "Programming Languages",
+      icon: <Code  size={24} className="text-blue-500" />,
+      technologies: ["Java", "Python", "JavaScript", "Solidity", "TypeScript", "HTML", "CSS", "SCSS"],
+    },
+    {
       category: "Frontend",
-      icon: <Code size={24} className="text-blue-500" />,
-      technologies: ["React.js", "Angular", "JavaScript", "TypeScript", "Tailwind CSS"],
+      icon: <SquareDashedBottomCode size={24} className="text-blue-500" />,
+      technologies: ["Angular", "React.js", "React Native", "Next.js"],
     },
     {
       category: "Backend",
       icon: <Server size={24} className="text-green-500" />,
-      technologies: ["Spring Boot", "Node.js", "Flask", "Express.js"],
+      technologies: ["Spring Boot", "Node.js", "Flask", "Hardhat"],
+    },
+    {
+      category: "Databases",
+      icon: <Database  size={24} className="text-orange-500" />,
+      technologies: ["MongoDB", "MySQL", "Firebase", "Supabase", "Web3Storage"],
     },
     {
       category: "DevOps & Cloud",
       icon: <Cloud size={24} className="text-purple-500" />,
-      technologies: ["AWS", "Docker", "Kubernetes", "CI/CD", "Supabase"],
+      technologies: ["AWS", "Docker", "Kubernetes", "CI/CD"],
     },
     {
-      category: "Tools & Databases",
+      category: "Tools",
       icon: <PenTool size={24} className="text-orange-500" />,  // Changed 'Tool' to 'PenTool'
-      technologies: ["Git", "MongoDB", "MySQL", "PostgreSQL", "Firebase"],
-    },
+      technologies: ["VS Code", "Intellij", "Git", "GitHub", "Postman", "Maven", "Sonarqube", "JMeter","Remix"],
+    }
   ];
   
 

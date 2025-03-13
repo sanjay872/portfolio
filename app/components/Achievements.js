@@ -1,4 +1,4 @@
-import { Trophy, Star, Award, Medal } from "lucide-react";
+import { Trophy, Star, Award } from "lucide-react";
 
 const achievements = [
   {
@@ -9,25 +9,32 @@ const achievements = [
     icon: <Trophy size={28} className="text-yellow-500" />,
   },
   {
-    title: "Best Use of MongoDB",
-    event: "University of Chicago Hackathon",
-    date: "2023",
-    description: "Created a real-time leaderboard for a game using MongoDB Atlas.",
+    title: "Azure Cloud Fundamentals",
+    event: "Cloud Exam",
+    date: "2022",
+    description: "Certificate ID - 992769679",
     icon: <Star size={28} className="text-blue-500" />,
   },
   {
-    title: "Finalist - Orahack Hackathon",
-    event: "OraHack",
-    date: "2024",
-    description: "Developed an education platform for decentralized storage of teacher resources.",
+    title: "A-team award",
+    event: "LTIMindtree",
+    date: "2022",
+    description: "Received an 'A-team' award for collaborating on resolving UI and UX issues within 1-2 weeks, allowing early application release. ",
     icon: <Award size={28} className="text-red-500" />,
   },
   {
-    title: "Software Developer Volunteer",
-    event: "Community Project",
-    date: "2023",
-    description: "Built an inventory management system using React and Supabase.",
-    icon: <Medal size={28} className="text-green-500" />,
+    title: "Hats Off award",
+    event: "LTIMindtree",
+    date: "2022",
+    description: "Earned a 'Hats Off' award for consistently completing 2-3 new tasks weekly with precision 100%, achieving zero backlog transfer to the next sprint.",
+    icon: <Award size={28} className="text-red-500" />,
+  },
+  {
+    title: "Mastermind award",
+    event: "LTIMindtree",
+    date: "2022",
+    description: "Awarded 'Mastermind' for aligning with business requirements and providing an app in two weeks, achieving 100% client satisfaction.",
+    icon: <Award size={28} className="text-red-500" />,
   },
 ];
 

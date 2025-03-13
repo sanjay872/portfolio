@@ -1,36 +1,72 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Fair Share",
+    description:
+      "A mobile application designed to make splitting bills among friends easy and efficient. Built with React Native, Node.js, Firebase, and OpenAI.",
+    techStack: "React Native | Node JS | Firebase | Open AI",
+    gitlink:"https://github.com/sanjay872/FairShare",
+    viewlink: "https://youtu.be/UkIMWfLS02g?si=uz39oI60r287wtq2",
+  },
+  {
+    title: "Chicago Food Network",
+    description:
+      "Developed an application to improve the food shortage in Chicago. With our application Excess food leftover at any place can find its way to people who need it.",
+    techStack: "React | Spring Boot | Postman",
+    gitlink:"https://github.com/sanjay872/chicago-food-network",
+    viewlink: "",
+  },
+  {
+    title: "Minerva",
+    description:
+      "We have created an online learning platform using web3. The users can upload educational videos. And can view what others have uploaded through the platform.",
+    techStack: "Nextjs | Hardhat | Moralis | web3.storage",
+    gitlink:"https://github.com/sanjay872/Minerva",
+    viewlink: "https://www.loom.com/embed/9b84dad7e9d84bfcaa89f26a8ab06c27?sid=eee1f5a3-a030-47ab-82a1-6a29bc7e9c2c",
+  },
+  {
     title: "Dyscalculia Helper App",
     description:
-      "A full-stack application that helps users with Dyscalculia by providing voice-recognition-based calculations.",
+      "A full-stack application that helps users with Dyscalculia by providing voice-recognition-based number recognizing.",
     techStack: "Angular | Flask | Spring Boot | MySQL",
-    link: "https://github.com/yourusername/DyscalculiaHelperApp",
+    gitlink:"https://github.com/sanjay872/DyscalculiaHelperApp",
+    viewlink:""
   },
   {
     title: "Interstellar Investigator",
     description:
       "An action shooting game built with Pygame and MongoDB, won 'Best Use of MongoDB Atlas' in a hackathon.",
     techStack: "Python | Pygame | MongoDB",
-    link: "https://github.com/yourusername/InterstellarInvestigator",
+    gitlink:"https://github.com/sanjay872/interstellar-investigator",
+    viewlink: "https://youtu.be/0wJjGnJcJk0?si=7y_66DFZdQRiDpXg",
   },
   {
-    title: "Inventory Management App",
+    title: "GadgetHive",
     description:
-      "A web-based inventory management system using Supabase, React, and automated email triggers.",
-    techStack: "ReactJS | Supabase | Node.js",
-    link: "https://github.com/yourusername/InventoryApp",
-  },
-  {
-    title: "Shopping Portal",
-    description:
-      "A scalable e-commerce platform with microservices architecture and CI/CD deployment on AWS.",
+      "Designed a tech gadget information portal using Angular and Spring Boot, increasing load handling and modularity.",
     techStack: "Angular | Spring Boot | AWS",
-    link: "https://github.com/yourusername/ShoppingPortal",
+    gitlink:"https://github.com/sanjay872/GadgetHive",
+    viewlink: "",
+  },
+  {
+    title: "Skywatch",
+    description:
+      "SkyWatch is a user-friendly weather app that provides accurate and up-to-date weather forecasts tailored to your location.",
+    techStack: "Next.js | Serpapi API",
+    gitlink:"https://github.com/sanjay872/SkyWatch",
+    viewlink: "https://youtu.be/PwkjuF-IXKo",
+  },
+  {
+    title: "Inventory Management",
+    description:
+      "Build Inventory management app",
+    techStack: "NextJS | Material UI | Firebase",
+    gitlink:"https://github.com/sanjay872/inventory_management",
+    viewlink: "https://youtu.be/PwkjuF-IXKo",
   },
 ];
 
@@ -63,13 +99,26 @@ export default function Projects() {
               <p className="text-blue-600 font-medium mt-2">{project.techStack}</p>
             </div>
             <a
-              href={project.link}
+              href={project.gitlink}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center text-blue-600 font-semibold"
             >
-              <ExternalLink className="mr-2" size={18} /> View Project
+              <ExternalLink className="mr-2" size={18} /> <Github /> Github
             </a>
+            {
+              project.viewlink?
+              <a
+              href={project.viewlink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 flex items-center justify-center text-blue-600 font-semibold"
+            >
+              <ExternalLink className="mr-2" size={18} />View Project
+            </a>
+            :
+            <></>
+            }
           </motion.div>
         ))}
       </div>
