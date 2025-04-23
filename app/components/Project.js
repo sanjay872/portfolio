@@ -5,6 +5,22 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Finquest",
+    description:
+      "FinQuest is an interactive, choose-your-own-adventure game designed to teach financial literacy. By simulating real-life financial decisions, FinQuest helps users understand the long-term impact of their money management choices—all in a fun, engaging format.",
+    techStack: "Next.js | Node JS | Firebase | Gemini AI | Vercel",
+    gitlink:"https://github.com/sanjay872/finquest",
+    viewlink: "https://youtu.be/O2MtIjPL2hI?si=BTc4N75JDJjnHthw",
+  },
+  {
+    title: "Sky Link",
+    description:
+      "SafeLink is an AI-powered healthcare platform that enhances patient safety by generating personalized safety checklists, managing real-time consent, and securely handling patient data.",
+    techStack: "React Native | Node JS | Firebase | Gemini AI",
+    gitlink:"https://github.com/sanjay872/SafeLink",
+    viewlink: "https://youtu.be/QS6O6-11tpY?si=kd6nNziUffklFTkg",
+  },
+  {
     title: "Fair Share",
     description:
       "A mobile application designed to make splitting bills among friends easy and efficient. Built with React Native, Node.js, Firebase, and OpenAI.",
