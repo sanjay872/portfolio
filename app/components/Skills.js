@@ -5,37 +5,103 @@ import { Code, Server, Cloud, PenTool, SquareDashedBottomCode, Database } from "
 
 
 const skills = [
-    {
-      category: "Programming Languages",
-      icon: <Code  size={24} className="text-blue-500" />,
-      technologies: ["Java", "Python", "JavaScript", "Solidity", "TypeScript", "HTML", "CSS", "SCSS"],
-    },
-    {
-      category: "Frontend",
-      icon: <SquareDashedBottomCode size={24} className="text-blue-500" />,
-      technologies: ["Angular", "React.js", "React Native", "Next.js"],
-    },
-    {
-      category: "Backend",
-      icon: <Server size={24} className="text-green-500" />,
-      technologies: ["Spring Boot", "Node.js", "Flask", "Hardhat"],
-    },
-    {
-      category: "Databases",
-      icon: <Database  size={24} className="text-orange-500" />,
-      technologies: ["MongoDB", "MySQL", "Firebase", "Supabase", "Web3Storage"],
-    },
-    {
-      category: "DevOps & Cloud",
-      icon: <Cloud size={24} className="text-purple-500" />,
-      technologies: ["AWS", "Docker", "Kubernetes", "CI/CD"],
-    },
-    {
-      category: "Tools",
-      icon: <PenTool size={24} className="text-orange-500" />,  // Changed 'Tool' to 'PenTool'
-      technologies: ["VS Code", "Intellij", "Git", "GitHub", "Postman", "Maven", "Sonarqube", "JMeter","Remix"],
-    }
-  ];
+  {
+    category: "Programming Languages",
+    icon: <Code size={24} className="text-blue-500" />,
+    technologies: [
+      "Java",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "Solidity",
+      "HTML",
+      "CSS",
+      "SCSS",
+    ],
+  },
+  {
+    category: "Frontend",
+    icon: <SquareDashedBottomCode size={24} className="text-blue-500" />,
+    technologies: [
+      "Angular",
+      "React.js",
+      "React Native",
+      "Next.js",
+    ],
+  },
+  {
+    category: "Backend",
+    icon: <Server size={24} className="text-green-500" />,
+    technologies: [
+      "Spring Boot",
+      "Node.js",
+      "Flask",
+      "Express.js",
+      "FastAPI",
+      "Hardhat",
+    ],
+  },
+  {
+    category: "Databases & Messaging",
+    icon: <Database size={24} className="text-orange-500" />,
+    technologies: [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Kafka",
+      "Firebase",
+      "Supabase",
+      "Web3Storage",
+    ],
+  },
+  {
+    category: "DevOps & Cloud",
+    icon: <Cloud size={24} className="text-purple-500" />,
+    technologies: [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Helm",
+      "Terraform",
+      "CI/CD",
+      "Jenkins",
+    ],
+  },
+  {
+    category: "AI & Data",
+    icon: <PenTool size={24} className="text-indigo-500" />,
+    technologies: [
+      "OpenAI APIs",
+      "Gemini AI",
+      "LangChain",
+      "LangGraph",
+      "ChromaDB",
+      "Streamlit",
+      "Polars",
+    ],
+  },
+  {
+    category: "Tools & Testing",
+    icon: <PenTool size={24} className="text-orange-500" />,
+    technologies: [
+      "VS Code",
+      "IntelliJ IDEA",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Maven",
+      "JUnit",
+      "Mockito",
+      "SonarQube",
+      "JMeter",
+      "n8n",
+      "Remix",
+    ],
+  },
+];
+
   
 
 export default function Skills() {

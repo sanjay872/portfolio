@@ -5,86 +5,103 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Finquest",
+    title: "QuantiLearn",
     description:
-      "FinQuest is an interactive, choose-your-own-adventure game designed to teach financial literacy. By simulating real-life financial decisions, FinQuest helps users understand the long-term impact of their money management choices—all in a fun, engaging format.",
-    techStack: "Next.js | Node JS | Firebase | Gemini AI | Vercel",
-    gitlink:"https://github.com/sanjay872/finquest",
+      "An AI-driven adaptive e-learning platform built with microservices to generate personalized learning paths in real time. Integrated OpenAI APIs with Kafka and Redis to process learning events at scale, achieving sub-1s API responses, 99.9% uptime, and 45% higher event throughput.",
+    techStack: "Spring Boot | Kafka | Redis | OpenAI | AWS | Microservices",
+    gitlink: "https://github.com/sanjay872/quantiLearn",
+    viewlink: "",
+  },
+  {
+    title: "ReliefConnect",
+    description:
+      "An AI-powered disaster relief management system that automates product recommendations, order tracking, and fraud detection during crises. Designed multi-agent workflows with LangGraph and ChromaDB and added human-in-the-loop review to ensure trust, transparency, and scalability.",
+    techStack: "React | Node.js | MongoDB | FastAPI | LangGraph | GPT-4o-mini",
+    gitlink: "https://github.com/sanjay872/reliefConnect",
+    viewlink: "",
+  },
+  {
+    title: "Contract Simplify",
+    description:
+      "An AI contract risk analysis platform that evaluates 500+ clauses using NLP-based risk scoring. Automated data ingestion and normalization to reduce manual vendor review time and improve classification accuracy by 25%.",
+    techStack: "Python | OpenAI | NLP | REST APIs | Bright Data",
+    gitlink: "https://github.com/sanjay872/Contract-Simplify",
+    viewlink: "",
+  },
+  {
+    title: "PowerAI Contract Agent",
+    description:
+      "An agentic AI system that automates contract generation, review, and version tracking. Built n8n-based workflows with Python services and OpenAI APIs to generate documents, create PDFs, and sync contract states in MongoDB.",
+    techStack: "Python | OpenAI | n8n | MongoDB | REST Webhooks",
+    gitlink: "https://github.com/sanjay872/PowerAI-Contract-AI-Agent",
+    viewlink: "",
+  },
+  {
+    title: "FinQuest",
+    description:
+      "A choose-your-own-adventure financial literacy game that simulates real-world money decisions. Built an interactive narrative engine with AI-generated scenarios to help users understand long-term financial consequences in an engaging format.",
+    techStack: "Next.js | Node.js | Firebase | Gemini AI | Vercel",
+    gitlink: "https://github.com/sanjay872/finquest",
     viewlink: "https://youtu.be/O2MtIjPL2hI?si=BTc4N75JDJjnHthw",
   },
   {
-    title: "Sky Link",
+    title: "SafeLink",
     description:
-      "SafeLink is an AI-powered healthcare platform that enhances patient safety by generating personalized safety checklists, managing real-time consent, and securely handling patient data.",
-    techStack: "React Native | Node JS | Firebase | Gemini AI",
-    gitlink:"https://github.com/sanjay872/SafeLink",
+      "An AI-powered healthcare platform that generates personalized patient safety checklists, manages consent workflows, and securely handles sensitive medical data to improve adherence to safety protocols.",
+    techStack: "React Native | Node.js | Firebase | Gemini AI",
+    gitlink: "https://github.com/sanjay872/SafeLink",
     viewlink: "https://youtu.be/QS6O6-11tpY?si=kd6nNziUffklFTkg",
   },
   {
     title: "Fair Share",
     description:
-      "A mobile application designed to make splitting bills among friends easy and efficient. Built with React Native, Node.js, Firebase, and OpenAI.",
-    techStack: "React Native | Node JS | Firebase | Open AI",
-    gitlink:"https://github.com/sanjay872/FairShare",
+      "A mobile application that simplifies splitting bills among friends. Implemented analytics dashboards to visualize spending by month and year, improving financial transparency and user experience.",
+    techStack: "React Native | Node.js | Firebase | OpenAI",
+    gitlink: "https://github.com/sanjay872/FairShare",
     viewlink: "https://youtu.be/UkIMWfLS02g?si=uz39oI60r287wtq2",
   },
   {
-    title: "Chicago Food Network",
+    title: "Robot Vacuum Analytics",
     description:
-      "Developed an application to improve the food shortage in Chicago. With our application Excess food leftover at any place can find its way to people who need it.",
-    techStack: "React | Spring Boot | Postman",
-    gitlink:"https://github.com/sanjay872/chicago-food-network",
+      "A multi-agent AI analytics system that converts natural-language questions into SQL queries and visualizations. Built a schema-agnostic pipeline with PostgreSQL, LangGraph, and Streamlit to enable non-technical users to explore large datasets interactively.",
+    techStack: "Python | PostgreSQL | LangChain | LangGraph | Streamlit",
+    gitlink: "https://github.com/sanjay872/Robot-Vacuum-Depot",
     viewlink: "",
-  },
-  {
-    title: "Minerva",
-    description:
-      "We have created an online learning platform using web3. The users can upload educational videos. And can view what others have uploaded through the platform.",
-    techStack: "Nextjs | Hardhat | Moralis | web3.storage",
-    gitlink:"https://github.com/sanjay872/Minerva",
-    viewlink: "https://www.loom.com/embed/9b84dad7e9d84bfcaa89f26a8ab06c27?sid=eee1f5a3-a030-47ab-82a1-6a29bc7e9c2c",
   },
   {
     title: "Dyscalculia Helper App",
     description:
-      "A full-stack application that helps users with Dyscalculia by providing voice-recognition-based number recognizing.",
+      "A speech-guided learning application designed to support students with dyscalculia. Integrated voice recognition with step-by-step problem assistance to improve task completion rates by 35%.",
     techStack: "Angular | Flask | Spring Boot | MySQL",
-    gitlink:"https://github.com/sanjay872/DyscalculiaHelperApp",
-    viewlink:""
+    gitlink: "https://github.com/sanjay872/DyscalculiaHelperApp",
+    viewlink: "",
   },
   {
     title: "Interstellar Investigator",
     description:
-      "An action shooting game built with Pygame and MongoDB, won 'Best Use of MongoDB Atlas' in a hackathon.",
+      "A Python-based action game featuring real-time scoring and persistent leaderboards. Won ‘Best Use of MongoDB Atlas’ for scalable game-state storage and leaderboard management.",
     techStack: "Python | Pygame | MongoDB",
-    gitlink:"https://github.com/sanjay872/interstellar-investigator",
+    gitlink: "https://github.com/sanjay872/interstellar-investigator",
     viewlink: "https://youtu.be/0wJjGnJcJk0?si=7y_66DFZdQRiDpXg",
   },
   {
     title: "GadgetHive",
     description:
-      "Designed a tech gadget information portal using Angular and Spring Boot, increasing load handling and modularity.",
-    techStack: "Angular | Spring Boot | AWS",
-    gitlink:"https://github.com/sanjay872/GadgetHive",
+      "A tech gadget discovery platform with role-based access for buyers and vendors. Built microservices with Angular and Spring Boot and deployed on AWS using CI/CD pipelines to improve scalability and modularity.",
+    techStack: "Angular | Spring Boot | MySQL | AWS",
+    gitlink: "https://github.com/sanjay872/GadgetHive",
     viewlink: "",
   },
   {
-    title: "Skywatch",
+    title: "Chicago Food Network",
     description:
-      "SkyWatch is a user-friendly weather app that provides accurate and up-to-date weather forecasts tailored to your location.",
-    techStack: "Next.js | Serpapi API",
-    gitlink:"https://github.com/sanjay872/SkyWatch",
-    viewlink: "https://youtu.be/PwkjuF-IXKo",
-  },
-  {
-    title: "Inventory Management",
-    description:
-      "Build Inventory management app",
-    techStack: "NextJS | Material UI | Firebase",
-    gitlink:"https://github.com/sanjay872/inventory_management",
-    viewlink: "https://youtu.be/PwkjuF-IXKo",
+      "A food donation platform designed to reduce food waste by connecting surplus food providers with people in need. Built scalable REST APIs and a responsive frontend to streamline food discovery and distribution.",
+    techStack: "React | Spring Boot | MySQL | Postman",
+    gitlink: "https://github.com/sanjay872/chicago-food-network",
+    viewlink: "",
   },
 ];
+
 
 export default function Projects() {
   return (

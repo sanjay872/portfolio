@@ -3,16 +3,17 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const about={
-    name:"Sanjay Sakthivel",
-    resumeLink:"https://drive.google.com/file/d/1qzM_aOmCWvIzyvH5mr4DZCLa9vdJhSll/view?usp=sharing",
-    profileDescription:`I'm a passionate software engineer with expertise in full-stack development, specializing in Java, Python, Angular, React, 
-                    Spring Boot, Node.js, and SQL. I thrive on solving complex problems and optimizing performance, successfully reducing app 
-                    response times by 20-30% and automating workflows to process 1,000+ records, eliminating manual overhead.  
-                    I enjoy collaborating on projects, from developing AI-driven applications to building scalable inventory management systems.`,
-    gitlink:"https://github.com/sanjay872",
-    linkedin:"https://linkedin.com/in/sanjaysakthivel"
-}
+const about = {
+  name: "Sanjay Sakthivel",
+  resumeLink: "https://drive.google.com/file/d/1WXfcHOc2mA3j4c9tMYxCw0oe6AG0Pt-e/view?usp=sharing",
+  profileDescription: `Full-stack software engineer with a strong focus on building scalable, cloud-native systems using Java, Spring Boot, React, and AWS. 
+  I've delivered production features across enterprise and startup environments, automating Excel-based workflows into RESTful services, 
+  reducing report generation from hours to seconds across 10K+ records, and improving API and UI performance by up to 25%. 
+  I enjoy working end-to-end on impactful systems, from AI-driven platforms and real-time applications to reliable, well-tested backend services.`,
+  gitlink: "https://github.com/sanjay872",
+  linkedin: "https://linkedin.com/in/sanjaysakthivel"
+};
+
 
 export default function About() {
     return (

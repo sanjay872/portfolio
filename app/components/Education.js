@@ -4,20 +4,21 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    degree: "Master’s in Computer Science,",
+    degree: "Master of Science in Computer Science",
     institution: "Illinois Institute of Technology, Chicago, IL",
     year: "Jan 2024 - Dec 2025",
     details:
-      "Advance Database Organization, UI/UX design, Mobile App Development, Machine Learning",
+      "Advanced Database Systems, Machine Learning, Mobile Application Development, UI/UX Design; hands-on coursework focused on scalable systems, data modeling, and applied AI.",
   },
   {
-    degree: "Bachelor of Engineering in Computer Science and Engineering,",
-    institution: "St.Joseph’s Institute of Technology, Chennai, Tamil Nadu, India",
+    degree: "Bachelor of Engineering in Computer Science and Engineering",
+    institution: "St. Joseph's Institute of Technology, Chennai, India",
     year: "Aug 2017 - Apr 2021",
     details:
-      "Data structures and Algorithms, Operating Systems, Object Oriented Programming.",
+      "Data Structures and Algorithms, Operating Systems, Object-Oriented Programming; strong foundation in core computer science and software engineering principles.",
   },
 ];
+
 
 export default function Education() {
   return (

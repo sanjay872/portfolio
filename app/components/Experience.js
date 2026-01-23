@@ -7,36 +7,62 @@ const experienceData = [
   {
     title: "Teaching Assistant - UI/UX",
     company: "Illinois Institute of Technology",
-    year: "Feb 2025 - Present",
+    year: "Feb 2025 - Dec 2025",
     description:
-      "Collaborating with two Teaching Assistants to guide 80 students in user-centered design principles, improving practical application skills and contributing to a 90%+ overall class score in assignments.",
+      "Guided 130+ students in UI/UX fundamentals by leading labs, reviewing assignments, and applying structured rubrics. Improved assignment quality and design clarity by ~30% while reinforcing user-centered design and usability principles.",
     icon: <GraduationCap size={24} className="text-white" />,
+  },
+  {
+    title: "Build Student Consultant",
+    company: "Build Fellowship",
+    year: "Jul 2025 - Nov 2025",
+    description:
+      "Built interactive, real-time web applications using React and Socket.io, including a multiplayer Tic-Tac-Toe game. Applied event-driven design and WebSockets to deliver low-latency, synchronized user interactions.",
+    icon: <Briefcase size={24} className="text-white" />,
+  },
+  {
+    title: "Full Stack Developer Intern",
+    company: "Colorado Resilience",
+    year: "Oct 2025 - Dec 2025",
+    description:
+      "Worked on a cloud-native React and Flask platform supporting family court and child welfare systems. Containerized services with Docker, integrated Keycloak authentication, deployed multi-service stacks via Kubernetes and Helm, and provisioned AWS infrastructure using Terraform—reducing environment setup time by 50% and improving deployment reliability.",
+    icon: <Code size={24} className="text-white" />,
   },
   {
     title: "Software Engineering Fellow",
     company: "Headstarter",
-    year: "Jul 2024 – Sept 2024",
+    year: "Jul 2024 - Sept 2024",
     description:
-      "Developed AI applications, including a Flash Card, Weather App, and Inventory Management System, utilizing Next.js and OpenAI, boosting automation, user interaction, and gained hands-on experience in AI integration.",
+      "Developed multiple AI-powered applications using Next.js and OpenAI APIs, including flashcards, weather dashboards, and inventory systems. Gained hands-on experience building user-facing AI features, prompt workflows, and production-ready frontend integrations.",
     icon: <Briefcase size={24} className="text-white" />,
   },
   {
     title: "Software Developer",
     company: "Driven to Develop",
-    year: "May 2024 – Jul 2024",
+    year: "May 2024 - Jul 2024",
     description:
-      "Constructed a prototype app to streamline tracking of 100+ retail products, increasing online retail management efficiency by integrating automatic email and alert notifications with Supabase triggers.",
+      "Built a prototype inventory management application tracking 100+ retail products. Integrated Supabase triggers for automated email alerts and notifications, reducing manual tracking effort and improving operational visibility for online retail workflows.",
     icon: <Code size={24} className="text-white" />,
   },
   {
-    title: "Software Engineer",
+    title: "Java Full Stack Developer",
     company: "LTIMindtree",
-    year: "Aug 2021 – Dec 2023",
+    year: "Dec 2021 - Dec 2023",
     description:
-      "Optimized front-end code to reduce API calls, improving response time by 20-30% and enhancing user experience. Maintained a 10,000+ line application for scalability and seamless updates. Automated data processing of 1,000+ records with a Spring Boot mailing trigger, eliminating manual checks. Ensured backend reliability by testing service and controller layers with Mockito.",
+      "Modernized enterprise risk and reporting systems by replacing Excel-based workflows with Spring Boot REST APIs and Angular dashboards, reducing report generation from hours to seconds across 10K+ records. Optimized frontend API usage to cut response times by 20–30%, automated daily schedulers processing 10K+ projects, and improved service reliability through JUnit and Mockito testing.",
+    icon: <Code size={24} className="text-white" />,
+  },
+  {
+    title: "Trainee Software Engineer",
+    company: "LTIMindtree",
+    year: "Aug 2021 - Dec 2021",
+    description:
+      "Designed and deployed full-stack CRUD applications using Java, Spring Boot, Angular, and MySQL. Built role-based authentication, deployed services on AWS (EC2, S3, RDS), and accelerated delivery by ~40% through end-to-end ownership from development to deployment.",
     icon: <Code size={24} className="text-white" />,
   },
 ];
+
+
 
 export default function Experience() {
   return (
