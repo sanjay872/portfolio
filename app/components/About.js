@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const about = {
   name: "Sanjay Sakthivel",
-  resumeLink: "https://drive.google.com/file/d/1WXfcHOc2mA3j4c9tMYxCw0oe6AG0Pt-e/view?usp=sharing",
+  resumeLink: "https://drive.google.com/file/d/1X9d_vSkR3IdaHOgUfZGNf7tmaJANr5ne/view?usp=sharing",
   profileDescription: `Full-stack software engineer with a strong focus on building scalable, cloud-native systems using Java, Spring Boot, React, and AWS. 
   I've delivered production features across enterprise and startup environments, automating Excel-based workflows into RESTful services, 
   reducing report generation from hours to seconds across 10K+ records, and improving API and UI performance by up to 25%. 
