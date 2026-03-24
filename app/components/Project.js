@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
+    {
+    title: "Secure Auth Service",
+    description:
+      "A production-style full-stack authentication system built using Go and React, implementing JWT-based access tokens with refresh token rotation for secure session management. Designed httpOnly cookie-based sessions with SameSite policy, IP-based rate limiting, and server-side token revocation to prevent replay and brute-force attacks, while enabling seamless session renewal through Axios interceptors.",
+    techStack: "Go | React | PostgreSQL | JWT | REST APIs | Authentication | Security | Axios",
+    gitlink: "https://github.com/sanjay872/secure-auth-service",
+    viewlink: "",
+  },
   {
     title: "QuantiLearn",
     description:

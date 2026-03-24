@@ -13,6 +13,7 @@ const skills = [
       "Python",
       "JavaScript",
       "TypeScript",
+      "Go",
       "SQL",
       "Solidity",
       "HTML",

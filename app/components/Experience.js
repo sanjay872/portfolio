@@ -4,6 +4,22 @@ import { motion } from "framer-motion";
 import { Briefcase, Code, GraduationCap } from "lucide-react";
 
 const experienceData = [
+    {
+    title: "Software Engineer Intern",
+    company: "Complama",
+    year: "Feb 2026 - Mar 2026",
+    description:
+      "Worked on a security, privacy, and AI governance platform, contributing to authentication and onboarding systems. Developed and tested backend services using Spring Boot for user registration, email verification, and MFA (OTP generation, validation, expiration), ensuring robust handling of edge cases. Built frontend component tests using Jest and React Testing Library for flows like password reset, email verification, and MFA setup, simulating real user behavior. Implemented end-to-end tests using Playwright to validate full onboarding and workspace creation flows. Conducted API testing using Postman and collaborated in agile sprints with co-founders and designers to improve product reliability and code quality.",
+    icon: <Code size={24} className="text-white" />,
+  },
+   {
+    title: "Full Stack Developer Intern",
+    company: "Colorado Resilience",
+    year: "Oct 2025 - Dec 2025",
+    description:
+      "Worked on a cloud-native React and Flask platform supporting family court and child welfare systems. Containerized services with Docker, integrated Keycloak authentication, deployed multi-service stacks via Kubernetes and Helm, and provisioned AWS infrastructure using Terraform-reducing environment setup time by 50% and improving deployment reliability.",
+    icon: <Code size={24} className="text-white" />,
+  },
   {
     title: "Teaching Assistant - UI/UX",
     company: "Illinois Institute of Technology",
@@ -19,14 +35,6 @@ const experienceData = [
     description:
       "Built interactive, real-time web applications using React and Socket.io, including a multiplayer Tic-Tac-Toe game. Applied event-driven design and WebSockets to deliver low-latency, synchronized user interactions.",
     icon: <Briefcase size={24} className="text-white" />,
-  },
-  {
-    title: "Full Stack Developer Intern",
-    company: "Colorado Resilience",
-    year: "Oct 2025 - Dec 2025",
-    description:
-      "Worked on a cloud-native React and Flask platform supporting family court and child welfare systems. Containerized services with Docker, integrated Keycloak authentication, deployed multi-service stacks via Kubernetes and Helm, and provisioned AWS infrastructure using Terraform—reducing environment setup time by 50% and improving deployment reliability.",
-    icon: <Code size={24} className="text-white" />,
   },
   {
     title: "Software Engineering Fellow",
